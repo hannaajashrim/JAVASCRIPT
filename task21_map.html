@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstName = ["super","spider","black","iron"];
+        let lastName = "man";
+        let fullName = firstName.map(a => a + lastName);
+        document.write(fullName + "<br>");
+
+
+
+        //Array of objects in map function
+
+        let object = [{Name:"hanna",Age:21},{Name:"rasha",Age:19},{Name:"haya",Age:22}];
+        object.map((i) => {
+            document.write(i.Name,i.Age + "<br>");
+
+        })
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="fruit"></p>
+    <p id="fruit1"></p>
+
+
+<!-- pop -->
+    
+    <script>
+        const fruits = ["banana","orange","apple","guava"];
+        document.getElementById("fruit").innerHTML = fruits;
+        fruits.pop();
+        document.getElementById("fruit1").innerHTML = fruits;
+    </script> 
+
+
+<!-- push -->
+
+    <!-- <script>
+        const fruits = ["banana","apple","orange","mango"];
+        document.getElementById("fruit").innerHTML = fruits;
+        fruits.push("guava");
+        document.getElementById("fruit1").innerHTML = fruits;
+    </script> -->
+
+<!-- shift -->
+
+    <!-- <script>
+        const fruits = ["mango","banana","apple","grapes"];
+        fruits.shift();
+        document.getElementById("fruit").innerHTML = fruits;
+    </script> -->
+
+<!-- unshift -->
+
+    <!-- <script>
+        const fruits = ["mango","banana","apple","orange"];
+        fruits.unshift("grape","strawberry");
+        document.getElementById("fruit").innerHTML = fruits;
+    </script> -->
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="task4.html" method="post" onsubmit="return validateform()">
+        <label for="name">Username</label>
+        <input type="text" id="name" onkeyup="clearmsg('namespan')"><br><br>
+
+        <span id="namespan" style="color: red;"></span><br>
+
+
+        <label for="password">Passsword</label>
+        <input type="password" id="pass" onkeyup="clearmsg('passpan')"><br><br>
+
+        <span id="passpan" style="color: red;"></span><br><br>
+
+
+        <input type="submit" value="submit">
+
+    </form>
+    <script>
+        function validateform(){
+            var name=document.getElementById("name").value;
+            var pswd=document.getElementById("pass").value;
+
+            if (name==null || name==""){
+                document.getElementById("namespan").innerHTML="Enter the valid name";
+                return false;
+            }else if(pswd.length<8){
+                document.getElementById("passpan").innerHTML="password must have 8 characters";
+                return false;
+            }
+        }
+        function clearmsg(sp){
+            document.getElementById(sp).innerHTML="";
+        }
+    </script>
+    
+</body>
+</html>

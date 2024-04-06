@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Workers{
+            constructor(name,salary){
+                var name;
+                var salary;
+            }
+            getName(){
+                return this.name;
+            }
+            setName(name){
+                this.name=name;
+            }
+            getSalary(){
+                return this.salary;
+            }
+            setSalary(salary){
+                this.salary=salary;
+            }
+        }
+        var work=new Workers();
+        work.setName("hanna");
+        work.setSalary(25000);
+        document.write(work.getName()+" "+work.getSalary());
+
+    </script>
+
+</body>
+</html>
